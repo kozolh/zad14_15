@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&family=Paytone+One&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&family=Rajdhani:wght@500&display=swap" rel="stylesheet">    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularz_kozyr</title>
+    <style>
+        h1 {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 62px;
+            display: flex;
+            justify-content: center;
+            margin-top: 6%;
+        }
+
+        .form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .form label {
+            font-size: 20px;
+            padding: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .form input {
+            border: 2px solid black;
+            width: 300px;
+            height: 40px;
+            margin: 3px;
+        }
+
+        .form-element {
+            grid-row: span 4;
+            grid-column: 1;
+            margin-left: 13%;
+        }
+
+        .form-element2 {
+            float: right;
+            grid-column: 2;
+            margin-left: 15%;
+        }
+
+        #el1 {
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+            font-size: 32px;
+            position: relative;
+        }
+
+        #el1::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: -115px;
+            bottom: -2px;
+            border-bottom: 3px solid black;
+        }
+        #el2 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .button {
+            padding: 10px;
+            padding-right: 30px;
+            border: 2px solid black;
+            background-color: white;
+        }
+
+        .button:hover {
+            background-color: rgb(232, 232, 232);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TWOJE DANE</h1>
+
+    <div class="form">
+        <div class="form-element">
+            <h2 id="el1">KONTYNUUJ BEZ LOGOWANIA</h2>
+            <h3 id="el2">DANE I ADRES ZAMIAWIAJĄCEGO</h3>
+        </div>
+        <div class="form-element2">
+            <h2 id="el1">MAM JUŻ KONTO</h2>
+        </div>
+        <div class="form-element2">
+            <label>Email: </label>
+            <input type="text">
+        </div>
+        <div class="form-element2">
+            <label>Hasło: </label>
+            <input type="text">
+        </div> <br>
+        <div class="form-element2">
+            <label>Nie pamiętam hasła</label>
+            <button class="button">Zaloguj się</button>
+        </div>
+        <div class="form-element">
+            <label>Imię:
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text">
+        </div>
+        <div class="form-element">
+            <label>Nazwisko: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text">
+        </div>
+        <div class="form-element">
+            <label>Ulica i numer: &nbsp;</label>
+            <input type="text">
+        </div>
+        <div class="form-element">
+            <label>Kod pocztowy: </label>
+            <input type="text">
+        </div>
+        <div class="form-element">
+            <label>Miasto, kraj: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text">
+        </div>
+        <div class="form-element">
+            <label>Telefon: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text">
+        </div>
+        <div class="form-element">
+            <label>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text">
+        </div>
+
+    </div>
+</body>
+
+</html>
